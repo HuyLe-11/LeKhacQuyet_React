@@ -33,7 +33,7 @@ const Contact10 = (props) => {
           <div className="contact10-container2">
             <img
               alt={props.location1ImageAlt}
-              src={props.location1ImageSrc}
+              src="/res/demo_home_img.jpg"
               className="contact10-image1 thq-img-ratio-16-9"
             />
             <h3 className="contact10-text12 thq-heading-3">

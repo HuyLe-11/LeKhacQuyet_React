@@ -7,7 +7,7 @@ import './pricing14.css'
 const Pricing14 = (props) => {
   const [isMonthly, setIsMonthly] = useState(true)
   return (
-    <div className="pricing14-pricing23 thq-section-padding">
+    <div className="pricing14-pricing23 thq-section-padding" >
       <div className="pricing14-max-width thq-section-max-width">
         <div className="pricing14-section-title">
           <span className="pricing14-text100 thq-body-small">

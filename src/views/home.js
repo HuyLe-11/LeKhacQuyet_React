@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { useRef } from 'react'
 
 import { Helmet } from 'react-helmet'
 
@@ -7,13 +8,14 @@ import Hero17 from '../components/hero17'
 import Features24 from '../components/features24'
 import CTA26 from '../components/cta26'
 import Pricing14 from '../components/pricing14'
-import Testimonial17 from '../components/testimonial17'
 import Contact10 from '../components/contact10'
 import Footer4 from '../components/footer4'
 import './home.css'
+import { Route } from 'react-router-dom/cjs/react-router-dom.min'
 
 
 const Home = (props) => {
+
   return (
     <div className="home-container">
       <Helmet>
@@ -43,22 +45,22 @@ const Home = (props) => {
         }
         page1={
           <Fragment>
-            <span className="home-text104">Page One</span>
+            <span className="home-text104">Facebook</span>
           </Fragment>
         }
         page2={
           <Fragment>
-            <span className="home-text105">Page Two</span>
+            <span className="home-text105">Instagram</span>
           </Fragment>
         }
         page3={
           <Fragment>
-            <span className="home-text106">Page Three</span>
+            <span className="home-text106">X</span>
           </Fragment>
         }
         page4={
           <Fragment>
-            <span className="home-text107">Page Four</span>
+            <span className="home-text107">Email</span>
           </Fragment>
         }
         action1={
@@ -73,43 +75,40 @@ const Home = (props) => {
         }
         page1Description={
           <Fragment>
-            <span className="home-text110">Page One Description</span>
+            <span className="home-text110">Follow for updates and direct messages</span>
           </Fragment>
         }
         page2Description={
           <Fragment>
-            <span className="home-text111">Page Two Description</span>
+            <span className="home-text111">Explore my latest photos and behind-the-scenes</span>
           </Fragment>
         }
         page3Description={
           <Fragment>
-            <span className="home-text112">Page Three Description</span>
+            <span className="home-text112">For more stories</span>
           </Fragment>
         }
         page4Description={
           <Fragment>
-            <span className="home-text113">Page Four Description</span>
+            <span className="home-text113">quyet2004@gmail.com</span>
           </Fragment>
         }
       ></Navbar8>
       <Hero17
         action1={
           <Fragment>
-            <span className="home-text114">Main action</span>
+            <span className="home-text114">View galleries</span>
           </Fragment>
         }
         action2={
           <Fragment>
-            <span className="home-text115">Secondary action</span>
+            <span className="home-text115">Pricing</span>
           </Fragment>
         }
         content1={
           <Fragment>
             <span className="home-text116">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
+            Explore breathtaking wildlife photography — available as fine art prints and licensed images.
             </span>
           </Fragment>
         }
@@ -131,7 +130,7 @@ const Home = (props) => {
         }
         feature2Title={
           <Fragment>
-            <span className="home-text119">Diverse Wildlife Collections</span>
+            <span className="home-text119">Biodiversity conservation</span>
           </Fragment>
         }
         feature3Title={
@@ -150,8 +149,7 @@ const Home = (props) => {
         feature2Description={
           <Fragment>
             <span className="home-text122">
-              Explore stunning galleries showcasing wildlife from around the
-              world.
+             Saving Wildlife, Sustaining Life on Earth
             </span>
           </Fragment>
         }
@@ -224,7 +222,7 @@ const Home = (props) => {
         content2={
           <Fragment>
             <span className="home-text134">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We offer high-quality photo prints and image licensing at various price points to suit your needs.
               <span
                 dangerouslySetInnerHTML={{
                   __html: ' ',
@@ -453,103 +451,12 @@ const Home = (props) => {
           </Fragment>
         }
       ></Pricing14>
-      <Testimonial17
-        review1={
-          <Fragment>
-            <span className="home-text178">
-              Working with Chien C. Lee was an absolute pleasure. The website
-              design perfectly showcases my wildlife photography in a
-              professional and captivating manner.
-            </span>
-          </Fragment>
-        }
-        review2={
-          <Fragment>
-            <span className="home-text179">
-              I highly recommend Chien C. Lee for any photography website design
-              needs. The attention to detail and focus on wildlife truly sets
-              them apart.
-            </span>
-          </Fragment>
-        }
-        review3={
-          <Fragment>
-            <span className="home-text180">
-              The galleries on the website are simply stunning. Chien C. Lee has
-              a unique ability to capture the essence of wild animals in their
-              natural habitat.
-            </span>
-          </Fragment>
-        }
-        review4={
-          <Fragment>
-            <span className="home-text181">
-              As a wildlife blogger, having a visually appealing website is
-              crucial. Chien C. Lee exceeded my expectations and I couldn&apos;t
-              be happier with the results.
-            </span>
-          </Fragment>
-        }
-        content1={
-          <Fragment>
-            <span className="home-text182">
-              Read what our clients have to say about their experience working
-              with us.
-            </span>
-          </Fragment>
-        }
-        heading1={
-          <Fragment>
-            <span className="home-text183">Testimonials</span>
-          </Fragment>
-        }
-        author1Name={
-          <Fragment>
-            <span className="home-text184">John Doe</span>
-          </Fragment>
-        }
-        author2Name={
-          <Fragment>
-            <span className="home-text185">Jane Smith</span>
-          </Fragment>
-        }
-        author3Name={
-          <Fragment>
-            <span className="home-text186">David Johnson</span>
-          </Fragment>
-        }
-        author4Name={
-          <Fragment>
-            <span className="home-text187">Sarah Williams</span>
-          </Fragment>
-        }
-        author1Position={
-          <Fragment>
-            <span className="home-text188">Wildlife Photographer</span>
-          </Fragment>
-        }
-        author2Position={
-          <Fragment>
-            <span className="home-text189">Animal Conservationist</span>
-          </Fragment>
-        }
-        author3Position={
-          <Fragment>
-            <span className="home-text190">Nature Enthusiast</span>
-          </Fragment>
-        }
-        author4Position={
-          <Fragment>
-            <span className="home-text191">Wildlife Blogger</span>
-          </Fragment>
-        }
-      ></Testimonial17>
+  
       <Contact10
         content1={
           <Fragment>
             <span className="home-text192">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in ero.
+              
             </span>
           </Fragment>
         }

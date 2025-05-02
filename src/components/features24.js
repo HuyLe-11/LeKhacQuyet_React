@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -6,23 +7,31 @@ import selfpic from '../assets/lekhacquyet_selfpic.jpg'
 
 import './features24.css'
 
+
 const Features24 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
+
+  const history = useHistory(); 
+
+  const handleClick = () => {
+    history.push('/about'); // Navigate to the new page
+  }
+
   return (
     <div className="thq-section-padding">
       <div className="features24-container2 thq-section-max-width">
         <div className="features24-image-container">
           {activeTab === 0 && (
             <img
-              alt={props.feature1ImgAlt}
-              src={props.feature1ImgSrc}
+              alt="Le Khac Quyet Wildlife Photography"
+              src="/res/photogrph_banner.jpg"
               className="features24-image1 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 1 && (
             <img
-              alt={props.feature2ImgAlt}
-              src={props.feature2ImgSrc}
+              alt="Le Khac Quyet Wildlife Photography for Biodiversity conversation"
+              src="/res/Bio_conv_banner.jpg"
               className="features24-image2 thq-img-ratio-16-9"
             />
           )}
@@ -31,6 +40,8 @@ const Features24 = (props) => {
               alt={props.feature3ImgAlt}
               src={selfpic}
               className="features24-image3 thq-img-ratio-16-9"
+              onClick={handleClick}
+              style={{ cursor: 'pointer' }} // Add pointer cursor for better UX
             />
           )}
         </div>
@@ -81,7 +92,7 @@ const Features24 = (props) => {
                 {props.feature2Title ?? (
                   <Fragment>
                     <span className="features24-text3">
-                      Diverse Wildlife Collections
+                      Diverse Wildlife Collections 
                     </span>
                   </Fragment>
                 )}
@@ -96,7 +107,7 @@ const Features24 = (props) => {
                   <Fragment>
                     <span className="features24-text4">
                       Explore stunning galleries showcasing wildlife from around
-                      the world.
+                      the world. 
                     </span>
                   </Fragment>
                 )}
@@ -112,7 +123,7 @@ const Features24 = (props) => {
             </div>
             <div className="features24-content3">
               <h2 className="thq-heading-2">
-                {props.feature3Title ?? (
+                {props.feature3Title  ?? (
                   <Fragment>
                     <span className="features24-text6">About Le Khac Quyet</span>
                   </Fragment>

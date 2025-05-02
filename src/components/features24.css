@@ -180,16 +180,10 @@
   margin-left: 50px;
   display: inline-flex;
   animation: bounce-left 1.5s infinite;
+  display: none;
 }
 
-@keyframes bounce-left {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-8px);
-  }
-}
+
 
 @media(max-width: 991px) {
   .features24-container2 {

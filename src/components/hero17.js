@@ -65,16 +65,17 @@ const Hero17 = (props) => {
             <span className="thq-body-small">
               {props.action1 ?? (
                 <Fragment>
-                  <span className="hero17-text7">Main action</span>
+                  <span className="hero17-text7">Galleries</span>
                 </Fragment>
               )}
             </span>
           </button>
-          <button className="thq-button-outline hero17-button2">
+          <button className="thq-button-outline hero17-button2" onClick={() => window.scroll(0, 1900)}>
+              {/* bấm nút đó sẽ scroll xuống pricing (trick) */}
             <span className="thq-body-small">
               {props.action2 ?? (
                 <Fragment>
-                  <span className="hero17-text5">Secondary action</span>
+                  <span className="hero17-text5">Pricing</span>
                 </Fragment>
               )}
             </span>

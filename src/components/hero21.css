@@ -1,0 +1,144 @@
+.hero21-header5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+ 
+.hero21-image {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-height: auto;
+  min-height: auto;
+  object-fit: cover;
+}
+ 
+.hero21-column {
+  gap: 24px;
+  width: auto;
+  display: flex;
+  z-index: 1;
+  max-width: 560px;
+  align-self: flex-end;
+  align-items: flex-start;
+  flex-shrink: 0;
+  animation-name: slideInDown;
+  flex-direction: column;
+  animation-delay: 0s;
+  animation-duration: 400ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero21-content {
+  gap: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.hero21-text1 {
+  width: 578px;
+}
+ 
+.hero21-actions {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero21-container1 {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero21-container2 {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero21-container3 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+ 
+.hero21-max-width {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+ 
+.hero21-text2 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 70px;
+  font-family: "Montserrat Alternates";
+  text-transform: lowercase;
+}
+ 
+@media(max-width: 767px) {
+  .hero21-header5 {
+    justify-content: center;
+  }
+  .hero21-column {
+    width: 100%;
+    align-self: center;
+  }
+  .hero21-content {
+    align-self: center;
+  }
+  .hero21-text1 {
+    width: 556px;
+    height: 193px;
+    align-self: center;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .hero21-actions {
+    width: 100%;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  .hero21-max-width {
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .hero21-column {
+    width: 318px;
+    height: 287px;
+    align-self: center;
+  }
+  .hero21-text1 {
+    width: 405px;
+    margin-right: 0px;
+  }
+  .hero21-actions {
+    flex-direction: column;
+  }
+  .hero21-container1 {
+    width: 100%;
+  }
+  .hero21-container2 {
+    width: 100%;
+  }
+  .hero21-text2 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: Montserrat Alternates;
+    text-transform: lowercase;
+  }
+}

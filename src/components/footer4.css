@@ -79,7 +79,13 @@
 .footer4-text7 {
   display: inline-block;
 }
- 
+.navbar8-icon-group-footer{
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 @media(max-width: 767px) {
   .footer4-row {
     gap: var(--dl-layout-space-oneandhalfunits);

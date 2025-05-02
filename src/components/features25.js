@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 import './features25.css'
 
+import './about.js'
+
 const Features25 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
   return (
@@ -80,7 +82,7 @@ const Features25 = (props) => {
               <h2 className="thq-heading-2">
                 {props.feature3Title ?? (
                   <Fragment>
-                    <span className="features25-text5">About Chien C. Lee</span>
+                    <span className="features25-text5">About Le Khac Quyet</span>
                   </Fragment>
                 )}
               </h2>
