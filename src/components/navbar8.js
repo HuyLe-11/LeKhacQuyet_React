@@ -13,7 +13,7 @@ const Navbar8 = (props) => {
     <header className="navbar8-container1">
       <header data-thq="thq-navbar" className="navbar8-navbar-interactive">
         <img
-          alt={props.logoAlt}
+          alt="LeKhacQuyetLogo"
           src="/res/logo1.jpg"
           className="navbar8-image1"
         />
@@ -79,29 +79,26 @@ const Navbar8 = (props) => {
                 </div>
                 {link5AccordionOpen && (
                   <div className="navbar8-container5">
-                    <a href={props.linkUrlPage1}>
+                    <a href="https://www.facebook.com/quyet2004"
+                    target="_blank">
                       <div className="navbar8-menu-item1">
                         <img
                           alt={props.page1ImageAlt}
-                          src={props.page1ImageSrc}
+                          src="/res/facebook_favicon.webp"
                           className="navbar8-page1-image1"
                         />
                         <div className="navbar8-content1">
                           <span className="navbar8-page11 thq-body-large">
-                            {props.page1 ?? (
                               <Fragment>
-                                <span className="navbar8-text21">Page One</span>
+                                <span className="navbar8-text21">Facebook</span>
                               </Fragment>
-                            )}
                           </span>
                           <span className="thq-body-small">
-                            {props.page1Description ?? (
                               <Fragment>
                                 <span className="navbar8-text14">
-                                  Page One Description
+                                Follow for updates and direct messages
                                 </span>
                               </Fragment>
-                            )}
                           </span>
                         </div>
                       </div>
