@@ -9,6 +9,8 @@ import Footer4 from '../components/footer4'
 
 
 const Home = (props) => {
+  const text = document.createElement("span");
+  text.textContent = " hjkj";
   return (
     <div className="home-container1">
         <Navbar8>
@@ -32,24 +34,46 @@ const Home = (props) => {
             <div className="home-answer-container1">
               <span className="home-answer1">
                 <span className="Card-Text">
-                  Le Khac Quyet is an Vietnamese
+                  Le Khac Quyet is an Vietnamese photographer
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span>
-                  Primatologist/Zoologist/Wildlife Conservationist/Wildlife
-                  Photographer
-                </span>
+                <br></br>
+                  <span id = "question1">
+                  </span>
+
+                <br>
+                </br>
+                <button className="submit-btn" id = "qs1_btn" onClick={() =>
+                 {
+                  const textarea = document.createElement("textarea");
+                  const span = document.createElement("span");
+                  span.textContent = "abcd";
+                  const logic = document.getElementById("question1");
+
+                  logic.appendChild(span);
+
+                  span.appendChild(textarea);
+
+                  textarea.addEventListener("keydown", (e) => {
+                      if (e.key === "Enter" && !e.shiftKey){
+                          e.preventDefault();
+                          const newText = textarea.value.trim();
+                          
+                          span.innerHTML = newText.replace(/\n/g, "<br>");
+                          textarea.replaceChild(span, textarea);
+                      }
+                    });
+                 } 
+                }>
+                  Change 
+                </button>
                 <br className="Card-Text"></br>
               </span>
-              <span className="Card-Text">
-                Here you would give the answer. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                Sed cursus ante dapibus diam.c Sed nisi. Nulla quis sem at nibh
-                elementum imperdiet.
+              <span className="Card-Text" id = "question2">
               </span>
             </div>
           </div>
@@ -127,3 +151,4 @@ const Home = (props) => {
 }
 
 export default Home
+

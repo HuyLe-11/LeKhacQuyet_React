@@ -184,7 +184,7 @@ const Navbar8 = (props) => {
               </div>
           </nav>
           <div className="navbar8-buttons1">
-            <button className="navbar8-action11 thq-button-animated thq-button-filled">
+            <button className="navbar8-action11 thq-button-animated thq-button-filled" >
               <span>
                 {props.action1 ?? (
                   <Fragment>
@@ -193,7 +193,7 @@ const Navbar8 = (props) => {
                 )}
               </span>
             </button>
-            <button className="navbar8-action21 thq-button-outline thq-button-animated">
+            <button className="navbar8-action21 thq-button-outline thq-button-animated" onClick={() => window.location.href = "/login"}>
               <span>
                 {props.action2 ?? (
                   <Fragment>
